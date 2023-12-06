@@ -26,4 +26,6 @@ interface ListenerInterface
     public function value($value);
 
     public function whitespace(string $whitespace): void;
+
+	public function char($char): void;
 }

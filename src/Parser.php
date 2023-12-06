@@ -211,6 +211,8 @@ class Parser
             return;
         }
 
+		$this->listener->char($char);
+
         switch ($this->state) {
             case self::STATE_IN_STRING:
                 if ('"' === $char) {
